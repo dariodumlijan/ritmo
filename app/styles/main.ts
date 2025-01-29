@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
-import { Font } from '.';
-import colors from './colors';
-import { isApple, isiPhone } from '../utils';
+import { Font } from '@styles';
+import colors from '@styles/colors';
+import { isApple, isiPhone } from '@utils';
 
 const mainStyle = StyleSheet.create({
   container: {
@@ -65,22 +65,6 @@ const mainStyle = StyleSheet.create({
     top: isiPhone ? '8%' : '5%',
     width: 25,
     zIndex: 1,
-  },
-  ads: {
-    alignItems: 'center',
-    // backgroundColor: colors.black,
-    bottom: isiPhone ? '4.5%' : '2%',
-    display: 'flex',
-    height: '10%',
-    justifyContent: 'flex-end',
-    position: 'absolute',
-    width: '100%',
-    zIndex: 999,
-  },
-  adSpace: {
-    // backgroundColor: colors.black,
-    height: isApple ? '10%' : '14%',
-    width: '100%',
   },
 });
 

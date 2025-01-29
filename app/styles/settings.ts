@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
-import { Font } from '.';
-import colors from './colors';
-import { deviceHeight, isTablet, isiPhone } from '../utils';
+import { Font } from '@styles';
+import colors from '@styles/colors';
+import { deviceHeight, isTablet, isiPhone } from '@utils';
 
 const settingsStyle = StyleSheet.create({
   navigation: {
@@ -48,26 +48,6 @@ const settingsStyle = StyleSheet.create({
   },
   soundWrapper: {
     display: 'flex',
-  },
-  btnRewardScreen: {
-    backgroundColor: colors.primaryDark,
-    borderBottomColor: colors.grayBlue,
-    borderBottomWidth: 3,
-    borderLeftColor: colors.grayBlue,
-    borderLeftWidth: 1,
-    borderRadius: 15,
-    borderRightColor: colors.grayBlue,
-    borderRightWidth: 1,
-    marginTop: 20,
-    marginBottom: '15%',
-    paddingHorizontal: 15,
-    paddingVertical: 8,
-  },
-  btnRewardScreenText: {
-    color: colors.white,
-    fontFamily: Font.semiBold,
-    fontSize: 18,
-    textAlign: 'center',
   },
 });
 
